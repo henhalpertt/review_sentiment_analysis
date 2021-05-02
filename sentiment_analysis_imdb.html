@@ -13218,7 +13218,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -13258,7 +13258,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="p">,</span> <span class="n">labels</span> <span class="o">=</span> <span class="n">read_imdb_data</span><span class="p">()</span>
@@ -13300,7 +13300,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.utils</span> <span class="kn">import</span> <span class="n">shuffle</span>
@@ -13329,7 +13329,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">train_X</span><span class="p">,</span> <span class="n">test_X</span><span class="p">,</span> <span class="n">train_y</span><span class="p">,</span> <span class="n">test_y</span> <span class="o">=</span> <span class="n">prepare_imdb_data</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span>
@@ -13369,7 +13369,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">train_X</span><span class="p">[</span><span class="mi">100</span><span class="p">])</span>
@@ -13390,7 +13390,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>I almost didn&#39;t rent this because of all the bad comments but did anyways.I thought it was similar to darkness falls which i also liked. The only part i hated about the tooth ferry was the 2 red neck brothers at the gas station.They were funny and the dialog made me laugh but this was not a comedy. It ruined the movie a bit for me because it was unnecessary.The rest of the movie was the way a horror or suspense film should be. The make-up was good and I have seen way worse movies then this one. It was a simple story with believable acting.It&#39;s not the scariest or goriest movie, but I wasn&#39;t ticked off or wanting a refund after watching it. On the DVD there was previews of other movies that all look good and i&#39;m gonna check them out.
+<pre>Being half-portuguese doesn&#39;t render me half-blind (nor half-prejudiced) when discussing portuguese films. Not that I get to do that very often anyway. But this film was such a rush of adrenaline! Yes, that&#39;s right - it was mostly accurate as far as history went/goes - but it pulled no punches on venturing beyond usual portuguese-film territory: things like using real locations in the middle of traffic-congested Lisbon and recruiting a real crowd to stand in for the real crowd of almost 30 years ago. And by God did they get it right! OK, to sum it up: very emotional if you&#39;ve lived through it, but you&#39;ll spot minor improvements that could have been made as well as plot necessities that were. If you&#39;re just watching it randomly, you&#39;re in for a good historical romp, only of the very recent History kind and a bit more thought-proving than usual. Even by European standards, yes.
 1
 </pre>
 </div>
@@ -13410,7 +13410,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">nltk</span>
@@ -13448,7 +13448,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Apply review_to_words to a review (train_X[100] or any other review)</span>
@@ -13465,72 +13465,85 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[14]:</div>
+    <div class="prompt output_prompt">Out[13]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[&#39;bett&#39;,
- &#39;midler&#39;,
- &#39;indescrib&#39;,
- &#39;concert&#39;,
- &#39;give&#39;,
- &#39;everi&#39;,
- &#39;time&#39;,
- &#39;stage&#39;,
- &#39;whether&#39;,
- &#39;laugh&#39;,
- &#39;joke&#39;,
- &#39;antic&#39;,
- &#39;dab&#39;,
- &#39;eye&#39;,
- &#39;strain&#39;,
+<pre>[&#39;yep&#39;,
+ &#39;definatli&#39;,
+ &#39;worst&#39;,
+ &#39;mstifi&#39;,
+ &#39;movi&#39;,
+ &#39;defin&#39;,
+ &#39;seen&#39;,
+ &#39;wors&#39;,
+ &#39;think&#39;,
+ &#39;gremlin&#39;,
+ &#39;rate&#39;,
+ &#39;r&#39;,
+ &#39;well&#39;,
+ &#39;anyway&#39;,
+ &#39;met&#39;,
+ &#39;rick&#39;,
+ &#39;sloan&#39;,
+ &#39;sci&#39;,
+ &#39;fi&#39;,
+ &#39;convent&#39;,
+ &#39;amazingli&#39;,
+ &#39;lectur&#39;,
  &#39;one&#39;,
- &#39;tremend&#39;,
- &#39;ballad&#39;,
- &#39;bett&#39;,
- &#39;midler&#39;,
- &#39;move&#39;,
- &#39;audienc&#39;,
+ &#39;realli&#39;,
+ &#39;low&#39;,
+ &#39;budget&#39;,
+ &#39;convent&#39;,
+ &#39;everyth&#39;,
+ &#39;goe&#39;,
+ &#39;everyon&#39;,
+ &#39;brought&#39;,
+ &#39;someth&#39;,
+ &#39;want&#39;,
  &#39;see&#39;,
- &#39;live&#39;,
- &#39;best&#39;,
- &#39;way&#39;,
- &#39;see&#39;,
- &#39;bett&#39;,
- &#39;next&#39;,
- &#39;best&#39;,
- &#39;thing&#39;,
- &#39;interest&#39;,
- &#39;thing&#39;,
- &#39;look&#39;,
- &#39;incred&#39;,
- &#39;voic&#39;,
- &#39;chang&#39;,
- &#39;matur&#39;,
- &#39;year&#39;,
- &#39;never&#39;,
- &#39;lost&#39;,
- &#39;power&#39;,
- &#39;vocal&#39;,
- &#39;correct&#39;,
+ &#39;crap&#39;,
+ &#39;seen&#39;,
+ &#39;friend&#39;,
+ &#39;brought&#39;,
+ &#39;seem&#39;,
+ &#39;like&#39;,
+ &#39;nice&#39;,
+ &#39;guy&#39;,
+ &#39;cool&#39;,
+ &#39;question&#39;,
+ &#39;comment&#39;,
+ &#39;hobgoblin&#39;,
+ &#39;even&#39;,
+ &#39;told&#39;,
+ &#39;take&#39;,
+ &#39;serious&#39;,
+ &#39;said&#39;,
+ &#39;love&#39;,
+ &#39;mst3k&#39;,
  &#39;version&#39;,
- &#39;stay&#39;,
- &#39;never&#39;,
- &#39;lose&#39;,
- &#39;anyth&#39;,
- &#39;spirit&#39;,
- &#39;rose&#39;,
- &#39;divin&#39;,
- &#39;mad&#39;,
- &#39;pure&#39;,
- &#39;heartfelt&#39;,
- &#39;ever&#39;,
- &#39;treasur&#39;,
- &#39;concert&#39;,
- &#39;long&#39;,
- &#39;time&#39;]</pre>
+ &#39;rick&#39;,
+ &#39;sloan&#39;,
+ &#39;knew&#39;,
+ &#39;think&#39;,
+ &#39;meant&#39;,
+ &#39;bad&#39;,
+ &#39;like&#39;,
+ &#39;mar&#39;,
+ &#39;attack&#39;,
+ &#39;guess&#39;,
+ &#39;stand&#39;,
+ &#39;movi&#39;,
+ &#39;give&#39;,
+ &#39;5&#39;,
+ &#39;betray&#39;,
+ &#39;fellow&#39;,
+ &#39;msti&#39;,
+ &#39;sorri&#39;,
+ &#39;guy&#39;]</pre>
 </div>
 
 </div>
@@ -13551,6 +13564,14 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
+<ol>
+<li>using stem(): "chops" (Text Normalization) some of the input words, for example: movie --&gt; movi, everything --&gt;everyth </li>
+<li>It also replaces some letters, for example: definitely --&gt; definatli</li>
+<li>All stop words (commonly used words such as “the”, “a”, “an”, “in”) were removed using "stopwords" from nltk package</li>
+<li>All words are in lower case. </li>
+<li>All html tags in the input were removed. </li>
+<li>one review was a long string, but now each tokenized word is a value in an array. </li>
+</ol>
 
 </div>
 </div>
@@ -13565,7 +13586,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pickle</span>
@@ -13617,7 +13638,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Preprocess data</span>
@@ -13668,57 +13689,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">build_dict2</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">vocab_size</span> <span class="o">=</span> <span class="mi">5000</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Construct and return a dictionary mapping each of the most frequently appearing words to a unique integer.&quot;&quot;&quot;</span>
-    
-    <span class="c1"># TODO: Determine how often each word appears in `data`. Note that `data` is a list of sentences and that a</span>
-    <span class="c1">#       sentence is a list of words.</span>
-    
-    <span class="n">word_count</span> <span class="o">=</span> <span class="p">{}</span> <span class="c1"># A dict storing the words that appear in the reviews along with how often they occur</span>
-    
-    <span class="k">for</span> <span class="n">words</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
-        <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>
-            <span class="k">if</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">word_count</span><span class="p">:</span>
-                <span class="n">word_count</span><span class="p">[</span><span class="n">word</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="n">word_count</span><span class="p">[</span><span class="n">word</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
-    
-    <span class="c1"># TODO: Sort the words found in `data` so that sorted_words[0] is the most frequently appearing word and</span>
-    <span class="c1">#       sorted_words[-1] is the least frequently appearing word.</span>
-    
-    <span class="n">sorted_words</span> <span class="o">=</span> <span class="p">[</span><span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">word_count</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)]</span>
-    
-    <span class="n">word_dict</span> <span class="o">=</span> <span class="p">{}</span> <span class="c1"># This is what we are building, a dictionary that translates words into integers</span>
-    <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">word</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">sorted_words</span><span class="p">[:</span><span class="n">vocab_size</span> <span class="o">-</span> <span class="mi">2</span><span class="p">]):</span> <span class="c1"># The -2 is so that we save room for the &#39;no word&#39;</span>
-        <span class="n">word_dict</span><span class="p">[</span><span class="n">word</span><span class="p">]</span> <span class="o">=</span> <span class="n">idx</span> <span class="o">+</span> <span class="mi">2</span>                              <span class="c1"># &#39;infrequent&#39; labels</span>
-        
-    <span class="k">return</span> <span class="n">word_dict</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">word_dict</span> <span class="o">=</span> <span class="n">build_dict2</span><span class="p">(</span><span class="n">train_X</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
@@ -13755,7 +13726,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">word_dict</span> <span class="o">=</span> <span class="n">build_dict</span><span class="p">(</span><span class="n">train_X</span><span class="p">)</span>
@@ -13779,14 +13750,16 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
 <p>Movie, film, one, like, time (see code below)</p>
-<p>and yes since these are movie reviews all most common words are related to movies. Makes sense.</p>
+<p>and yes since these are movie reviews all most-common words are somewhat related to movies. Makes sense.
+( Except for "one" word, maybe thats the title of some movie or something related to the movie..
+and "like" word, but this word is used heavily in almost any case, not just movie reviews)</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Use this space to determine the five most frequently appearing words in the training set.</span>
@@ -13833,7 +13806,7 @@ time
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data_dir</span> <span class="o">=</span> <span class="s1">&#39;../data/pytorch&#39;</span> <span class="c1"># The folder we will use for storing data</span>
@@ -13848,7 +13821,7 @@ time
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_dir</span><span class="p">,</span> <span class="s1">&#39;word_dict.pkl&#39;</span><span class="p">),</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
@@ -13870,7 +13843,7 @@ time
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">convert_and_pad</span><span class="p">(</span><span class="n">word_dict</span><span class="p">,</span> <span class="n">sentence</span><span class="p">,</span> <span class="n">pad</span><span class="o">=</span><span class="mi">500</span><span class="p">):</span>
@@ -13906,7 +13879,7 @@ time
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">train_X</span><span class="p">,</span> <span class="n">train_X_len</span> <span class="o">=</span> <span class="n">convert_and_pad_data</span><span class="p">(</span><span class="n">word_dict</span><span class="p">,</span> <span class="n">train_X</span><span class="p">)</span>
@@ -13928,12 +13901,13 @@ time
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Use this cell to examine one of the processed reviews to make sure everything is working as intended.</span>
 <span class="c1">## 0 - no word; 1 - infreq word </span>
-<span class="n">train_X</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">train_X</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;length of review in the training set: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">train_X</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13946,60 +13920,49 @@ time
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[24]:</div>
+    <div class="prompt"></div>
 
 
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([   1,    1,    3,    1, 1658,  567,   29, 1586,    3,   34,  291,
-         23,  291,   23,   37,   36,  148,   66,  218,   19,    3,   41,
-         42,  291,  962,  138,    8, 1681,   66,  391,  385, 1137,  598,
-       4860,  557, 2143,   37, 2226,  660,  266,    3,  848,  854,  235,
-        419,  290,  803,    1,  471,   60,  807,   35,   30,   26,   23,
-          4,   36,  148,    3,  280, 1663,   14, 1766,   12,    3,  501,
-        331,    1,  290,   44,  536, 4815,    3,   54,   19,    5,  151,
-        385,  151,  170,  564,  564,  564,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0])</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[   1    1    3    1 1658  567   29 1586    3   34  291   23  291   23
+   37   36  148   66  218   19    3   41   42  291  962  138    8 1681
+   66  391  385 1137  598 4860  557 2143   37 2226  660  266    3  848
+  854  235  419  290  803    1  471   60  807   35   30   26   23    4
+   36  148    3  280 1663   14 1766   12    3  501  331    1  290   44
+  536 4815    3   54   19    5  151  385  151  170  564  564  564    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0]
+length of review in the training set: 500
+</pre>
 </div>
-
 </div>
 
 </div>
@@ -14017,7 +13980,13 @@ time
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong></p>
+<p><strong>Answer:</strong>
+when constructing word_to_dict we only used the training set. The training sets were not pre-processed. 
+during the lessons, the instructor mentioned: "Keep in mind that 'in the wild' we will only have access to the training set so our transformer can only use the training set to construct a representation." 
+This makes sense, b/c we do not want any data leakage.
+Data leakage occurs when information from outside the training dataset(unseen data or in our case-testing data) is used to create the model.</p>
+<p>One issue that I can think of is perhaps the padding of length 500 to each review. We are still keeping the most valueable words but perhaps 500 is not the best length, maybe larger lengths would produce better results.</p>
+<p>( Note: I am sure there are some other issues, I am curious to know why this might be an issue or not..)</p>
 
 </div>
 </div>
@@ -14702,7 +14671,11 @@ Billable seconds: 285
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong></p>
+<p><strong>Answer:</strong>
+The XGBoost produced roughly the same accuracy result (~0.87).
+The XGBoost is a random forest method that is less computationally expensive comapred to NNs. 
+In addition, everytime I use NN I "lose" the interpretability of my features. It is very difficult and almost impossible to interpret NN models.
+Even if the accuracy of the XGBoost model would be slightly lower than NN, I would still pick XGboost due to the reasons mentioned above.</p>
 
 </div>
 </div>
@@ -15198,10 +15171,11 @@ Starting  neg  files
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
-<p>I went to IMDB and picked the most conntroversial movie I know : Twilight. <br>
+<p>I went to IMDB and picked the most controversial movie I know : Twilight. <br>
 Provided below are two reviews taken from IMDB, one is positive, other is negative.</p>
 <p><img src="positive_review.png"></p>
 <p><img src="negative_review.png"></p>
+<p>If you cant see the images I have also provided a .png files in the zip</p>
 
 </div>
 </div>
